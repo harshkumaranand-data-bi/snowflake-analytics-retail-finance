@@ -1,0 +1,43 @@
+==FLOW==
+
+CSV Files
+    ↓
+Snowflake Stage
+    ↓
+RAW Schema
+    ↓
+Streams
+    ↓
+Tasks (Automated ETL)
+    ↓
+MART Schema
+    ↓
+BI Dashboards/Reports
+
+
+
+==ARCHITECTURE==
+
+RETAIL_ANALYTICS
+│
+├── RAW
+│   ├── TABLES
+│	│	├── RAW_SALES
+│   │	├── DIM_CUSTOMER
+│   │	├── DIM_PRODUCT
+│   │	├── DIM_REGION
+│   │	├── DIM_DATE
+│	├── SALES_STREAM
+│   ├── RETAIL_STAGE
+│   └── CSV_FORMAT
+│
+├── STAGING
+│
+└── MART
+    ├── TABLES
+	│	├── FACT_SALES
+	│	├── DIM_CUSTOMER
+	│	├── DIM_PRODUCT
+	│	├── DIM_REGION
+	│	├── DIM_DATE
+    └── LOAD_SALES_TASK
