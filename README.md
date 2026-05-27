@@ -1,7 +1,7 @@
-# Retail Finance & Sales Analytics using Snowflake + Power BI
+# Retail Finance & Sales Analytics using Snowflake + BI
 
 ## Project Overview
-This project demonstrates an end-to-end cloud data warehousing solution using Snowflake and Microsoft Power BI for retail finance and sales analytics.
+This project demonstrates an end-to-end cloud data warehousing solution using Snowflake and BI for retail finance and sales analytics.
 
 The solution covers:
 - Snowflake database setup
@@ -10,7 +10,7 @@ The solution covers:
 - Automated ETL using Tasks
 - Star schema data modeling
 - KPI reporting and analytical SQL queries
-- Power BI reporting integration
+- BI reporting integration
 
 ## Architecture
 CSV Files -> Snowflake Stage -> RAW Schema -> Streams -> Tasks (Automated ETL) -> MART Schema -> BI Dashboards/Reports
